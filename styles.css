@@ -67,3 +67,27 @@ header {
   padding: 50px;
   display: none;
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.modal.show {
+  display: flex; /* Changed to flex for alignment */
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 50px;
+  z-index: 1; /* Ensure modal content stays on top */
+}
