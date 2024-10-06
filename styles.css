@@ -4,13 +4,54 @@
   padding: 0;
 }
 
-.main {
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: radial-gradient(circle, red, yellow, blue);
 }
 
 .container {
   border: 1px solid black;
+  background: white;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  margin: 10px 50px 10px 50px;
+  font-size: 30px;
+  color: blue;
+  border-bottom: 1px solid black;
+}
+
+.main {
+  border-top: 1px solid black;
+  margin: 20px;
+}
+
+.instructions {
+  margin: 10px;
+  text-align: center;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.option {
+  margin: 10px;
+}
+
+.take-quiz-modal {
+  background: white;
+  padding: 50px;
+  display: none;
+}
+
+.make-quiz-modal {
+  background: white;
+  padding: 50px;
+  display: none;
 }

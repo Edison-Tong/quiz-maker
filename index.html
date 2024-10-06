@@ -7,10 +7,32 @@
     <title>Quiz App</title>
   </head>
   <body>
-    <div class="main">
-      <div class="container">
-        <header>My super fun quiz app!!</header>
+    <div class="container">
+      <header>My super fun quiz app!!</header>
+      <div class="main">
+        <div class="instructions">
+          <p>take a quiz or make a quiz!</p>
+        </div>
+        <div class="selections">
+          <button class="option" id="take">take a quiz</button>
+
+          <button class="option" id="make">make a quiz</button>
+        </div>
       </div>
     </div>
+
+    <div class="take-quiz-modal modal">
+      <div class="modal-content">
+        <button class="close">Close</button>
+      </div>
+    </div>
+
+    <div class="make-quiz-modal modal">
+      <div class="modal-content">
+        <button class="close">Close</button>
+      </div>
+    </div>
+
+    <script src="quizApp.js"></script>
   </body>
 </html>
