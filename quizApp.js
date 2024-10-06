@@ -4,7 +4,8 @@ let takeQuizModalBtn = document.querySelector("#take");
 let homeScreen = document.querySelector(".container");
 
 function openModal(event) {
-  let modal = document.querySelector(`.${event.srcElement.id}-quiz-modal`);
+  let modal = document.querySelector(`.${event.target.id}-quiz-modal`);
+
   modal.style.display = "block";
   homeScreen.style.display = "none";
 }
